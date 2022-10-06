@@ -7,9 +7,13 @@
     <title>Mi Banda de Rock - Contacto</title>
 </head>
 <body>
+
+    <!-- Header -->
     <div>
         <p><h1>CONTACTO</h1></p>
     </div>
+
+    <!-- Menú -->
     <div>
         <p>Menú Principal</p>
         <ul>
@@ -20,5 +24,24 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </div>
+
+    <!-- Cuerpo -->
+    <form>
+        <p><label for="nombre">Nombre: </label> <input type="text" id="nombre" required></p>
+        <p><label for="apellido">Apellido: </label> <input type="text" id="apellido" required></p>
+        <p><label for="email">Email: </label> <input type="email" id="email" required></p>
+        <p>
+            <label for="ecivil">Seleccione: </label>
+            <select name="ecivil" id="ecivil">
+                <option value="" selected>Elige una opción</option>
+                <option value="soltero">Soltero</option>
+                <option value="casado">Casado</option>
+            </select>
+        </p>
+        <p><label for="news"><h4>¿Deseas recibir nuestro Newsletter?<input type="checkbox"></h4></label></p>
+        <p><textarea name="comentarios" placeholder="Comentarios" rows="10" cols="50"></textarea></p>
+        <p><button type="reset" id="reset">Limpiar formulario</button><button type="submit" id="submit">Enviar formulario</button></p>
+    </form>
+
 </body>
 </html>
